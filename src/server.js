@@ -16,10 +16,10 @@ app.get('/', (req, res) => {
     let isLoggedIn = false;
     let username = '';
 
-    if (isLoggedIn = true) {
-        username = 'John';
-    } else {
+    if (isLoggedIn == true) {
         username = 'Guest';
+    } else {
+        username = 'Me';
     }
 
     res.send(`Welcome, ${username}!`);
