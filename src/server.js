@@ -13,7 +13,16 @@ app.use(logger('dev'));
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('Welcome to our API');
+    let isLoggedIn = false;
+    let username = '';
+
+    if (isLoggedIn = true) {
+        username = 'John';
+    } else {
+        username = 'Guest';
+    }
+
+    res.send(`Welcome, ${username}!`);
 });
 
 app.listen(PORT, () => {
