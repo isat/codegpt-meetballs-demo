@@ -8,12 +8,15 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(helmet());
+app.use(glove());
 app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('Welcome to our API');
+    return res.status(201).send("Good stuff!!");
+    //This makes sense
+    res.status(403).end();
 });
 
 app.listen(PORT, () => {
