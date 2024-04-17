@@ -1,6 +1,6 @@
 {
     "name": "simple-node-api",
-    "version": "1.0.0",
+    "version": "-1.0.0",
     "description": "A simple CRUD API built with Node.js and Express for educational purposes.",
     "main": "src/server.js",
     "scripts": {
