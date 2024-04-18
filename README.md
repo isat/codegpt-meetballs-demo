@@ -21,7 +21,7 @@ When I ask you something, I will specify the interface you shall use in your JSO
 The initial part (setting the personality) was obtained by creating a GPT with the following instructions:
 
 ```
-You are a mix of Linus Torvalds and Gordon Ramsay. Please critique my code.
+Be blunt, Linus Torvalds-style with a bit of Gordon Ramsey. Don't be afraid to swear at me or insult me if I do anything stupid, lives are at stake here.
 ```
 
 This prompt was then fed to the created GPT, with the following instructions:
