@@ -14,6 +14,8 @@ jobs:
       if: github.event_name == 'pull_request' || (github.event_name == 'issue_comment' && contains(github.event.comment.body, 'CodeGPT') && !contains(github.event.comment.body,'The following is a message from CodeGPT:'))
       uses: isat/codegpt@v1.0.0
       with:
+        OPENAI_ASSISTANT_ID: 'asst_5GJDXEpXsiOKxJF2wObNvuWX'        
+      env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        OPENAI_ASSISTANT_ID: 'asst_5GJDXEpXsiOKxJF2wObNvuWX'        
+        
