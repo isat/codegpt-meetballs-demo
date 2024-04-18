@@ -20,4 +20,4 @@ jobs:
       uses: isat/codegpt@v1.0.0
       with:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        assistant_id: 'asst_5GJDXEpXsiOKxJF2wObNvuWX'
+        OPENAI_ASSISTANT_ID: 'asst_5GJDXEpXsiOKxJF2wObNvuWX'
