@@ -14,7 +14,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '20'
+        node-version: '18'
     - name: Run CodeGPT
       if: github.event_name == 'pull_request' || (github.event_name == 'issue_comment' && contains(github.event.comment.body, 'CodeGPT') && !contains(github.event.comment.body,'The following is a message from CodeGPT:'))
       uses: isat/codegpt@v1.0.0
